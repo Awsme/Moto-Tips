@@ -1,0 +1,114 @@
+// FLASH
+// mt-0484, mt-0482
+
+&.moto-widget-social-links-link_facebook   { background-color: #3a5a9f; }
+&.moto-widget-social-links-link_googleplus { background-color: #d61119; }
+&.moto-widget-social-links-link_twitter    { background-color: #45b0e3; }
+&.moto-widget-social-links-link_pinterest  { background-color: #bd2126; }
+&.moto-widget-social-links-link_linkedin   { background-color: #1783bc; }
+&.moto-widget-social-links-link_instagram  { background-color: #34638a; }
+
+&.moto-widget-social-links-link_facebook   { &:before { color: #3a5a9f; }}
+&.moto-widget-social-links-link_googleplus { &:before { color: #d61119; }}
+&.moto-widget-social-links-link_twitter    { &:before { color: #45b0e3; }}
+&.moto-widget-social-links-link_pinterest  { &:before { color: #bd2126; }}
+&.moto-widget-social-links-link_linkedin   { &:before { color: #1783bc; }}
+&.moto-widget-social-links-link_instagram  { &:before { color: #34638a; }}
+
+
+    .moto-widget-social-links-link_facebook   { &:before { content: "\f082"; } }
+    .moto-widget-social-links-link_googleplus { &:before { content: "\f0d4"; } }
+    .moto-widget-social-links-link_twitter    { &:before { content: "\f081"; } }
+    .moto-widget-social-links-link_pinterest  { &:before { content: "\f0d3"; } }
+    .moto-widget-social-links-link_linkedin   { &:before { content: "\f08c"; } }
+    .moto-widget-social-links-link_instagram  { &:before { content: "\f16d"; } } 
+
+    //general
+    .moto-widget-social-links-link_facebook   { &:before { content: "\f09a"; } }
+    .moto-widget-social-links-link_googleplus { &:before { content: "\f0d5"; } }
+    .moto-widget-social-links-link_twitter    { &:before { content: "\f099"; } }
+    .moto-widget-social-links-link_pinterest  { &:before { content: "\f0d2"; } }
+    .moto-widget-social-links-link_linkedin   { &:before { content: "\f0e1"; } }
+    .moto-widget-social-links-link_instagram  { &:before { content: "\f16d"; } } 
+
+    //CF mailchimp
+    &.moto-preset-3 {
+        .moto-widget-contact_form-group {
+            .moto-widget-contact_form-field {
+                display: inline-block;
+                height: 50px;
+                font-size: 14px;
+                padding: 10px 20px;
+                line-height: 1.2;
+                width: 350px;
+                border: 1px solid;
+                margin-bottom: 0;
+            }
+            @media screen and (max-width: @const_media_tablet_max_width) {
+                display: block;
+                .moto-widget-contact_form-field {
+                    display: block;
+                    width: 100%;
+                }
+            }
+        }
+        .moto-widget-contact_form-buttons {
+            margin-top: 0;
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            margin-left: 8px;
+            @media screen and (max-width: @const_media_tablet_max_width) {
+                margin-left: 0;
+                margin-top: 12px;
+                display: block;
+                position: relative;
+            }
+        }
+        .moto-widget-contact_form-success, .moto-widget-contact_form-danger { 
+            position: absolute;
+            @media screen and (max-width: @const_media_tablet_max_width) {
+                position: relative;
+            }
+        }
+    }
+    // ENTRY BUTTON
+    &.moto-preset-3 {
+        display: inline-block;
+        .moto-widget-contact_form-group {
+            display: inline-block;
+            .moto-widget-contact_form-field {
+                display: inline-block;
+                height: 47px;
+                font-size: 16px;
+                padding: 8px 72px 8px 17px;
+                line-height: 24px;
+                border-radius: 5px;
+                width: 570px;
+                border: 1px solid;
+                margin-bottom: 0;
+            }
+            @media screen and (max-width: @const_media_tablet_max_width) {
+                display: block;
+                .moto-widget-contact_form-field {
+                    display: block;
+                    width: 100%;
+                }
+            }
+        }
+        .moto-widget-contact_form-buttons {
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin: 0;
+            .moto-widget-button-link {
+                border-radius: 0 5px 5px 0;
+            }
+        }
+        .moto-widget-contact_form-success, .moto-widget-contact_form-danger { 
+            position: absolute;
+            @media screen and (max-width: @const_media_tablet_max_width) {
+                position: relative;
+            }
+        }
+    }
