@@ -34,6 +34,7 @@
     //CF mailchimp
     &.moto-preset-3 {
         .moto-widget-contact_form-group {
+            display: inline-block;
             .moto-widget-contact_form-field {
                 display: inline-block;
                 height: 50px;

@@ -1827,23 +1827,7 @@
     "regular": "http://fonts.gstatic.com/s/bentham/v6/5-Mo8Fe7yg5tzV0GlQIuzQ.ttf"
    }
   },
-  {
-   "kind": "webfonts#webfont",
-   "family": "Berkshire Swash",
-   "category": "handwriting",
-   "variants": [
-    "regular"
-   ],
-   "subsets": [
-    "latin-ext",
-    "latin"
-   ],
-   "version": "v4",
-   "lastModified": "2016-05-31",
-   "files": {
-    "regular": "http://fonts.gstatic.com/s/berkshireswash/v4/4RZJjVRPjYnC2939hKCAimKfbtsIjCZP_edQljX9gR0.ttf"
-   }
-  },
+ 
   {
    "kind": "webfonts#webfont",
    "family": "Bevan",
@@ -6205,32 +6189,6 @@
   },
   {
    "kind": "webfonts#webfont",
-   "family": "Hind",
-   "category": "sans-serif",
-   "variants": [
-    "300",
-    "regular",
-    "500",
-    "600",
-    "700"
-   ],
-   "subsets": [
-    "latin-ext",
-    "devanagari",
-    "latin"
-   ],
-   "version": "v6",
-   "lastModified": "2016-06-02",
-   "files": {
-    "300": "http://fonts.gstatic.com/s/hind/v6/qa346Adgv9kPDXoD1my4kA.ttf",
-    "regular": "http://fonts.gstatic.com/s/hind/v6/mktFHh5Z5P9YjGKSslSUtA.ttf",
-    "500": "http://fonts.gstatic.com/s/hind/v6/2cs8RCVcYtiv4iNDH1UsQQ.ttf",
-    "600": "http://fonts.gstatic.com/s/hind/v6/TUKUmFMXSoxloBP1ni08oA.ttf",
-    "700": "http://fonts.gstatic.com/s/hind/v6/cXJJavLdUbCfjxlsA6DqTw.ttf"
-   }
-  },
-  {
-   "kind": "webfonts#webfont",
    "family": "Hind Guntur",
    "category": "sans-serif",
    "variants": [
@@ -7969,27 +7927,6 @@
   },
   {
    "kind": "webfonts#webfont",
-   "family": "Libre Baskerville",
-   "category": "serif",
-   "variants": [
-    "regular",
-    "italic",
-    "700"
-   ],
-   "subsets": [
-    "latin-ext",
-    "latin"
-   ],
-   "version": "v4",
-   "lastModified": "2016-05-31",
-   "files": {
-    "regular": "http://fonts.gstatic.com/s/librebaskerville/v4/pR0sBQVcY0JZc_ciXjFsKyyZRYCSvpCzQKuMWnP5NDY.ttf",
-    "italic": "http://fonts.gstatic.com/s/librebaskerville/v4/QHIOz1iKF3bIEzRdDFaf5QnhapNS5Oi8FPrBRDLbsW4.ttf",
-    "700": "http://fonts.gstatic.com/s/librebaskerville/v4/kH7K4InNTm7mmOXXjrA5v-xuswJKUVpBRfYFpz0W3Iw.ttf"
-   }
-  },
-  {
-   "kind": "webfonts#webfont",
    "family": "Libre Franklin",
    "category": "sans-serif",
    "variants": [
@@ -8232,30 +8169,7 @@
     "regular": "http://fonts.gstatic.com/s/londrinasolid/v4/yysorIEiYSBb0ylZjg791MR125CwGqh8XBqkBzea0LA.ttf"
    }
   },
-  {
-   "kind": "webfonts#webfont",
-   "family": "Lora",
-   "category": "serif",
-   "variants": [
-    "regular",
-    "italic",
-    "700",
-    "700italic"
-   ],
-   "subsets": [
-    "latin-ext",
-    "cyrillic",
-    "latin"
-   ],
-   "version": "v9",
-   "lastModified": "2016-06-07",
-   "files": {
-    "regular": "http://fonts.gstatic.com/s/lora/v9/aXJ7KVIGcejEy1abawZazg.ttf",
-    "italic": "http://fonts.gstatic.com/s/lora/v9/AN2EZaj2tFRpyveuNn9BOg.ttf",
-    "700": "http://fonts.gstatic.com/s/lora/v9/enKND5SfzQKkggBA_VnT1A.ttf",
-    "700italic": "http://fonts.gstatic.com/s/lora/v9/ivs9j3kYU65pR9QD9YFdzQ.ttf"
-   }
-  },
+  
   {
    "kind": "webfonts#webfont",
    "family": "Love Ya Like A Sister",
@@ -8556,24 +8470,6 @@
    "lastModified": "2016-05-31",
    "files": {
     "regular": "http://fonts.gstatic.com/s/marcellussc/v4/_jugwxhkkynrvsfrxVx8gS3USBnSvpkopQaUR-2r7iU.ttf"
-   }
-  },
-  {
-   "kind": "webfonts#webfont",
-   "family": "Marck Script",
-   "category": "handwriting",
-   "variants": [
-    "regular"
-   ],
-   "subsets": [
-    "latin-ext",
-    "cyrillic",
-    "latin"
-   ],
-   "version": "v7",
-   "lastModified": "2016-05-31",
-   "files": {
-    "regular": "http://fonts.gstatic.com/s/marckscript/v7/O_D1NAZVOFOobLbVtW3bci3USBnSvpkopQaUR-2r7iU.ttf"
    }
   },
   {
@@ -9046,22 +8942,7 @@
     "regular": "http://fonts.gstatic.com/s/metrophobic/v6/SaglWZWCrrv_D17u1i4v_aCWcynf_cDxXwCLxiixG1c.ttf"
    }
   },
-  {
-   "kind": "webfonts#webfont",
-   "family": "Michroma",
-   "category": "sans-serif",
-   "variants": [
-    "regular"
-   ],
-   "subsets": [
-    "latin"
-   ],
-   "version": "v7",
-   "lastModified": "2016-05-31",
-   "files": {
-    "regular": "http://fonts.gstatic.com/s/michroma/v7/0c2XrW81_QsiKV8T9thumA.ttf"
-   }
-  },
+ 
   {
    "kind": "webfonts#webfont",
    "family": "Milonga",
@@ -10411,27 +10292,7 @@
     "regular": "http://fonts.gstatic.com/s/originalsurfer/v5/gdHw6HpSIN4D6Xt7pi1-qIkEz33TDwAZczo_6fY7eg0.ttf"
    }
   },
-  {
-   "kind": "webfonts#webfont",
-   "family": "Oswald",
-   "category": "sans-serif",
-   "variants": [
-    "300",
-    "regular",
-    "700"
-   ],
-   "subsets": [
-    "latin-ext",
-    "latin"
-   ],
-   "version": "v11",
-   "lastModified": "2016-05-31",
-   "files": {
-    "300": "http://fonts.gstatic.com/s/oswald/v11/y3tZpCdiRD4oNRRYFcAR5Q.ttf",
-    "regular": "http://fonts.gstatic.com/s/oswald/v11/uLEd2g2vJglLPfsBF91DCg.ttf",
-    "700": "http://fonts.gstatic.com/s/oswald/v11/7wj8ldV_5Ti37rHa0m1DDw.ttf"
-   }
-  },
+  ,
   {
    "kind": "webfonts#webfont",
    "family": "Over the Rainbow",
@@ -10611,27 +10472,7 @@
     "700": "http://fonts.gstatic.com/s/ptsanscaption/v9/Q-gJrFokeE7JydPpxASt25tc0eyfI4QDEsobEEpk_hA.ttf"
    }
   },
-  {
-   "kind": "webfonts#webfont",
-   "family": "PT Sans Narrow",
-   "category": "sans-serif",
-   "variants": [
-    "regular",
-    "700"
-   ],
-   "subsets": [
-    "latin-ext",
-    "cyrillic-ext",
-    "cyrillic",
-    "latin"
-   ],
-   "version": "v7",
-   "lastModified": "2016-05-31",
-   "files": {
-    "regular": "http://fonts.gstatic.com/s/ptsansnarrow/v7/UyYrYy3ltEffJV9QueSi4ZTvAuddT2xDMbdz0mdLyZY.ttf",
-    "700": "http://fonts.gstatic.com/s/ptsansnarrow/v7/Q_pTky3Sc3ubRibGToTAYsLtdzs3iyjn_YuT226ZsLU.ttf"
-   }
-  },
+  
   {
    "kind": "webfonts#webfont",
    "family": "PT Serif",
@@ -11156,34 +10997,6 @@
   },
   {
    "kind": "webfonts#webfont",
-   "family": "Playfair Display",
-   "category": "serif",
-   "variants": [
-    "regular",
-    "italic",
-    "700",
-    "700italic",
-    "900",
-    "900italic"
-   ],
-   "subsets": [
-    "latin-ext",
-    "cyrillic",
-    "latin"
-   ],
-   "version": "v10",
-   "lastModified": "2016-06-07",
-   "files": {
-    "regular": "http://fonts.gstatic.com/s/playfairdisplay/v10/2NBgzUtEeyB-Xtpr9bm1CV6uyC_qD11hrFQ6EGgTJWI.ttf",
-    "italic": "http://fonts.gstatic.com/s/playfairdisplay/v10/9MkijrV-dEJ0-_NWV7E6NzMsbnvDNEBX25F5HWk9AhI.ttf",
-    "700": "http://fonts.gstatic.com/s/playfairdisplay/v10/UC3ZEjagJi85gF9qFaBgICsv6SrURqJprbhH_C1Mw8w.ttf",
-    "700italic": "http://fonts.gstatic.com/s/playfairdisplay/v10/n7G4PqJvFP2Kubl0VBLDECsYW3XoOVcYyYdp9NzzS9E.ttf",
-    "900": "http://fonts.gstatic.com/s/playfairdisplay/v10/UC3ZEjagJi85gF9qFaBgIKqwMe2wjvZrAR44M0BJZ48.ttf",
-    "900italic": "http://fonts.gstatic.com/s/playfairdisplay/v10/n7G4PqJvFP2Kubl0VBLDEC0JfJ4xmm7j1kL6D7mPxrA.ttf"
-   }
-  },
-  {
-   "kind": "webfonts#webfont",
    "family": "Playfair Display SC",
    "category": "serif",
    "variants": [
@@ -11311,32 +11124,6 @@
    "lastModified": "2016-05-31",
    "files": {
     "regular": "http://fonts.gstatic.com/s/pontanosans/v4/gTHiwyxi6S7iiHpqAoiE3C3USBnSvpkopQaUR-2r7iU.ttf"
-   }
-  },
-  {
-   "kind": "webfonts#webfont",
-   "family": "Poppins",
-   "category": "sans-serif",
-   "variants": [
-    "300",
-    "regular",
-    "500",
-    "600",
-    "700"
-   ],
-   "subsets": [
-    "latin-ext",
-    "devanagari",
-    "latin"
-   ],
-   "version": "v1",
-   "lastModified": "2016-06-07",
-   "files": {
-    "300": "http://fonts.gstatic.com/s/poppins/v1/VIeViZ2fPtYBt3B2fQZplvesZW2xOQ-xsNqO47m55DA.ttf",
-    "regular": "http://fonts.gstatic.com/s/poppins/v1/hlvAxH6aIdOjWlLzgm0jqg.ttf",
-    "500": "http://fonts.gstatic.com/s/poppins/v1/4WGKlFyjcmCFVl8pRsgZ9vesZW2xOQ-xsNqO47m55DA.ttf",
-    "600": "http://fonts.gstatic.com/s/poppins/v1/-zOABrCWORC3lyDh-ajNnPesZW2xOQ-xsNqO47m55DA.ttf",
-    "700": "http://fonts.gstatic.com/s/poppins/v1/8JitanEsk5aDh7mDYs-fYfesZW2xOQ-xsNqO47m55DA.ttf"
    }
   },
   {
