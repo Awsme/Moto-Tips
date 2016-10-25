@@ -1,5 +1,59 @@
 [
     {
+        "kind": "Comfortaa",
+        "family": "Comfortaa",
+        "category": "display",
+        "variants": [
+            "300",
+            "regular",
+            "700"
+        ],
+        "subsets": [
+            "latin-ext",
+            "cyrillic-ext",
+            "cyrillic",
+            "greek",
+            "latin"
+        ],
+        "version": "v7",
+        "lastModified": "2016-06-07",
+        "active_variants": [
+            "300",
+            "regular",
+            "700"
+        ],
+        "active_subsets": [
+            "latin-ext",
+            "cyrillic-ext",
+            "cyrillic",
+            "greek",
+            "latin"
+        ],
+        "provider": "google",
+        "active": true
+    },
+    {
+        "kind": "Zeyada",
+        "family": "Zeyada",
+        "category": "handwriting",
+        "variants": [
+            "regular"
+        ],
+        "subsets": [
+            "latin"
+        ],
+        "version": "v6",
+        "lastModified": "2016-05-31",
+        "active_variants": [
+            "regular"
+        ],
+        "active_subsets": [
+            "latin"
+        ],
+        "provider": "google",
+        "active": true
+    },
+    {
         "kind": "Libre Baskerville",
         "family": "Libre Baskerville",
         "category": "serif",

@@ -113,3 +113,26 @@
             }
         }
     }
+
+// Mixins
+// Gallery: 
+.caption_center( @top: 50%; ) {
+    top: @top;
+    bottom: auto;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+.icon_center( @content: "\f002"; @top: 50%; @left: 50%; ) {
+    content: @content;
+    top: @top;
+    left: @left;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+.icon_center_bottom( @content: "\f002"; @bottom: 5px; ) {
+    content: @content;
+    bottom: @bottom;
+    left: 0;
+    right: 0;
+    text-align: center;
+}

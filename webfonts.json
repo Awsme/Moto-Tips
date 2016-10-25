@@ -3244,30 +3244,6 @@
   },
   {
    "kind": "webfonts#webfont",
-   "family": "Comfortaa",
-   "category": "display",
-   "variants": [
-    "300",
-    "regular",
-    "700"
-   ],
-   "subsets": [
-    "latin-ext",
-    "cyrillic-ext",
-    "cyrillic",
-    "greek",
-    "latin"
-   ],
-   "version": "v7",
-   "lastModified": "2016-06-07",
-   "files": {
-    "300": "http://fonts.gstatic.com/s/comfortaa/v7/r_tUZNl0G8xCoOmp_JkSCi3USBnSvpkopQaUR-2r7iU.ttf",
-    "regular": "http://fonts.gstatic.com/s/comfortaa/v7/lZx6C1VViPgSOhCBUP7hXA.ttf",
-    "700": "http://fonts.gstatic.com/s/comfortaa/v7/fND5XPYKrF2tQDwwfWZJIy3USBnSvpkopQaUR-2r7iU.ttf"
-   }
-  },
-  {
-   "kind": "webfonts#webfont",
    "family": "Coming Soon",
    "category": "handwriting",
    "variants": [
@@ -15285,22 +15261,6 @@
     "500": "http://fonts.gstatic.com/s/yrsa/v1/rWuZmBLHIeKRbnfSvWCvYg.ttf",
     "600": "http://fonts.gstatic.com/s/yrsa/v1/1413P-oEfrq-tBIdqnslDQ.ttf",
     "700": "http://fonts.gstatic.com/s/yrsa/v1/iV49zaJV5wyo_4LgxE2yng.ttf"
-   }
-  },
-  {
-   "kind": "webfonts#webfont",
-   "family": "Zeyada",
-   "category": "handwriting",
-   "variants": [
-    "regular"
-   ],
-   "subsets": [
-    "latin"
-   ],
-   "version": "v6",
-   "lastModified": "2016-05-31",
-   "files": {
-    "regular": "http://fonts.gstatic.com/s/zeyada/v6/hmonmGYYFwqTZQfG2nRswQ.ttf"
    }
   }
  ]
