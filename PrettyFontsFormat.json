@@ -1,4 +1,27 @@
-[
+[  
+    {
+        "kind": "Anton",
+        "family": "Anton",
+        "category": "sans-serif",
+        "variants": [
+            "regular"
+        ],
+        "subsets": [
+            "latin-ext",
+            "latin"
+        ],
+        "version": "v7",
+        "lastModified": "2016-06-07",
+        "active_variants": [
+            "regular"
+        ],
+        "active_subsets": [
+            "latin-ext",
+            "latin"
+        ],
+        "provider": "google",
+        "active": true
+    },
     {
         "kind": "Comfortaa",
         "family": "Comfortaa",

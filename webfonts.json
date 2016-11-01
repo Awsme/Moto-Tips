@@ -899,23 +899,6 @@
   },
   {
    "kind": "webfonts#webfont",
-   "family": "Anton",
-   "category": "sans-serif",
-   "variants": [
-    "regular"
-   ],
-   "subsets": [
-    "latin-ext",
-    "latin"
-   ],
-   "version": "v7",
-   "lastModified": "2016-06-07",
-   "files": {
-    "regular": "http://fonts.gstatic.com/s/anton/v7/XIbCenm-W0IRHWYIh7CGUQ.ttf"
-   }
-  },
-  {
-   "kind": "webfonts#webfont",
    "family": "Arapey",
    "category": "serif",
    "variants": [
