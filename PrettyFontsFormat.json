@@ -1,4 +1,48 @@
-[  
+[
+    {
+        "kind": "Permanent Marker",
+        "family": "Permanent Marker",
+        "category": "handwriting",
+        "variants": [
+            "regular"
+        ],
+        "subsets": [
+            "latin"
+        ],
+        "version": "v5",
+        "lastModified": "2016-06-07",
+        "active_variants": [
+            "regular"
+        ],
+        "active_subsets": [
+            "latin"
+        ],
+        "provider": "google",
+        "active": true
+    },
+    {
+        "kind": "Abril Fatface",
+        "family": "Abril Fatface",
+        "category": "display",
+        "variants": [
+            "regular"
+        ],
+        "subsets": [
+            "latin-ext",
+            "latin"
+        ],
+        "version": "v8",
+        "lastModified": "2016-05-31",
+        "active_variants": [
+            "regular"
+        ],
+        "active_subsets": [
+            "latin-ext",
+            "latin"
+        ],
+        "provider": "google",
+        "active": true
+    },
     {
         "kind": "Anton",
         "family": "Anton",

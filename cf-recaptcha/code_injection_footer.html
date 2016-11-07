@@ -1,0 +1,13 @@
+<script>
+  angular.module('website.widget.contact_form').directive('motoCaptchaContactFormButton', ['widget.ContactForm.Service', function(MailService){
+        return {
+            link: function($scope, $element, $attr) {
+                $scope.captchaSubmit = function() {
+                    if(angular.element('.g-recaptcha-response').val()){
+                        $scope.submit();
+                    }
+                };
+            }
+        };
+    }]);
+  </script>

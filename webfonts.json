@@ -37,23 +37,6 @@
   },
   {
    "kind": "webfonts#webfont",
-   "family": "Abril Fatface",
-   "category": "display",
-   "variants": [
-    "regular"
-   ],
-   "subsets": [
-    "latin-ext",
-    "latin"
-   ],
-   "version": "v8",
-   "lastModified": "2016-05-31",
-   "files": {
-    "regular": "http://fonts.gstatic.com/s/abrilfatface/v8/X1g_KwGeBV3ajZIXQ9VnDojjx0o0jr6fNXxPgYh_a8Q.ttf"
-   }
-  },
-  {
-   "kind": "webfonts#webfont",
    "family": "Aclonica",
    "category": "sans-serif",
    "variants": [
@@ -10740,22 +10723,6 @@
    "lastModified": "2016-05-31",
    "files": {
     "regular": "http://fonts.gstatic.com/s/peralta/v4/cTJX5KEuc0GKRU9NXSm-8Q.ttf"
-   }
-  },
-  {
-   "kind": "webfonts#webfont",
-   "family": "Permanent Marker",
-   "category": "handwriting",
-   "variants": [
-    "regular"
-   ],
-   "subsets": [
-    "latin"
-   ],
-   "version": "v5",
-   "lastModified": "2016-06-07",
-   "files": {
-    "regular": "http://fonts.gstatic.com/s/permanentmarker/v5/9vYsg5VgPHKK8SXYbf3sMol14xj5tdg9OHF8w4E7StQ.ttf"
    }
   },
   {

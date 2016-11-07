@@ -1,0 +1,40 @@
+<div class="moto-widget-contact_form moto-preset-default moto-spacing-top-small moto-spacing-right-auto moto-spacing-bottom-auto moto-spacing-left-auto " data-preset="default" data-widget="contact_form" data-spacing="aaaa">
+    <div ng-controller="widget.ContactForm.Controller" ng-init="hash = 'THIS HASH CODE U CAN GET FROM MOTO CONTACT FORM IN ADMIN PANEL'">
+        <form class="moto-widget-contact_form-form" role="form" name="contactForm" ng-submit="submit()" novalidate="">
+            <div ng-show="sending" class="contact-form-loading"></div>
+
+                <div class="moto-widget-contact_form-group">
+                    <label for="field_name" class="moto-widget-contact_form-label"></label>
+                        <input type="text" class="moto-widget-contact_form-field moto-widget-contact_form-input" placeholder="Name: *" required="" ng-model-options="{ updateOn: 'blur' }" name="name" id="field_name" ng-model="message.name">
+                        <span class="moto-widget-contact_form-field-error ng-cloak" ng-cloak="" ng-show="contactForm.name.$invalid &amp;&amp; !contactForm.name.$pristine &amp;&amp; !contactForm.name.emailInvalid">Field is required</span>
+                        <span class="moto-widget-contact_form-field-error ng-cloak" ng-cloak="" ng-show="contactForm.name.emailInvalid &amp;&amp; !contactForm.name.$pristine">Incorrect email</span>
+                </div>
+
+                <div class="moto-widget-contact_form-group">
+                    <label for="field_email" class="moto-widget-contact_form-label"></label>
+                    <input type="text" class="moto-widget-contact_form-field moto-widget-contact_form-input" placeholder="Email: *" ng-blur="validate('email')" required="" ng-model-options="{ updateOn: 'blur' }" name="email" id="field_email" ng-model="message.email">
+                    <span class="moto-widget-contact_form-field-error ng-cloak" ng-cloak="" ng-show="contactForm.email.$invalid &amp;&amp; !contactForm.email.$pristine &amp;&amp; !contactForm.email.emailInvalid">Field is required</span>
+                    <span class="moto-widget-contact_form-field-error ng-cloak" ng-cloak="" ng-show="contactForm.email.emailInvalid &amp;&amp; !contactForm.email.$pristine">Incorrect email</span>
+                </div>
+
+                <div class="moto-widget-contact_form-group">
+                    <label for="field_message" class="moto-widget-contact_form-label"></label>
+                    <textarea class="moto-widget-contact_form-field moto-widget-contact_form-textarea" rows="3" placeholder="Message: *" required="" ng-model-options="{ updateOn: 'blur' }" name="message" id="field_message" ng-model="message.message"></textarea>
+                    <span class="moto-widget-contact_form-field-error ng-cloak" ng-cloak="" ng-show="contactForm.message.$invalid &amp;&amp; !contactForm.message.$pristine">Field is required</span>
+                </div>
+                <!-- CAPTCHA WILL BE HERE -->
+                <div class="g-recaptcha" data-sitekey=" THIS KEY U CAN GET FROM G-RECAPTCHA https://www.google.com/recaptcha/admin "></div>
+                <!-- CAPTCHA WILL BE HERE -->
+                <div class="moto-widget-contact_form-success ng-cloak" ng-cloak="" ng-show="emailSent">Your message was sent successfully</div>
+                <div class="moto-widget-contact_form-danger ng-cloak" ng-cloak="" ng-show="emailError">Sorry, your message was not sent</div>
+                <div class="moto-widget-contact_form-buttons">
+                <div moto-captcha-contact-form-button="" class="moto-widget-button moto-preset-default moto-align-left" data-preset="default" data-align="left">
+                    <a ng-click="captchaSubmit();" class="moto-widget-button-link moto-size-medium" data-size="medium">
+                        <span class="fa moto-widget-theme-icon"></span>
+                        <span class="moto-widget-button-label">Send</span></a>
+                </div>
+                <button type="submit" class="hidden"></button>
+                </div>
+            </form>
+        </div>
+    </div>
