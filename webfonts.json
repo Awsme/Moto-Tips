@@ -6870,40 +6870,6 @@
   },
   {
    "kind": "webfonts#webfont",
-   "family": "Josefin Slab",
-   "category": "serif",
-   "variants": [
-    "100",
-    "100italic",
-    "300",
-    "300italic",
-    "regular",
-    "italic",
-    "600",
-    "600italic",
-    "700",
-    "700italic"
-   ],
-   "subsets": [
-    "latin"
-   ],
-   "version": "v6",
-   "lastModified": "2016-05-31",
-   "files": {
-    "100": "http://fonts.gstatic.com/s/josefinslab/v6/etsUjZYO8lTLU85lDhZwUsSVQ0giZ-l_NELu3lgGyYw.ttf",
-    "100italic": "http://fonts.gstatic.com/s/josefinslab/v6/8BjDChqLgBF3RJKfwHIYh3Xcj1rQwlNLIS625o-SrL0.ttf",
-    "300": "http://fonts.gstatic.com/s/josefinslab/v6/NbE6ykYuM2IyEwxQxOIi2KcQoVhARpoaILP7amxE_8g.ttf",
-    "300italic": "http://fonts.gstatic.com/s/josefinslab/v6/af9sBoKGPbGO0r21xJulyyna0FLWfcB-J_SAYmcAXaI.ttf",
-    "regular": "http://fonts.gstatic.com/s/josefinslab/v6/46aYWdgz-1oFX11flmyEfS3USBnSvpkopQaUR-2r7iU.ttf",
-    "italic": "http://fonts.gstatic.com/s/josefinslab/v6/etsUjZYO8lTLU85lDhZwUvMZXuCXbOrAvx5R0IT5Oyo.ttf",
-    "600": "http://fonts.gstatic.com/s/josefinslab/v6/NbE6ykYuM2IyEwxQxOIi2Gv8CylhIUtwUiYO7Z2wXbE.ttf",
-    "600italic": "http://fonts.gstatic.com/s/josefinslab/v6/af9sBoKGPbGO0r21xJuly4R-5-urNOGAobhAyctHvW8.ttf",
-    "700": "http://fonts.gstatic.com/s/josefinslab/v6/NbE6ykYuM2IyEwxQxOIi2ED2ttfZwueP-QU272T9-k4.ttf",
-    "700italic": "http://fonts.gstatic.com/s/josefinslab/v6/af9sBoKGPbGO0r21xJuly_As9-1nE9qOqhChW0m4nDE.ttf"
-   }
-  },
-  {
-   "kind": "webfonts#webfont",
    "family": "Joti One",
    "category": "display",
    "variants": [
