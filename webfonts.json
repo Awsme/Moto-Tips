@@ -9195,24 +9195,6 @@
   },
   {
    "kind": "webfonts#webfont",
-   "family": "Montserrat",
-   "category": "sans-serif",
-   "variants": [
-    "regular",
-    "700"
-   ],
-   "subsets": [
-    "latin"
-   ],
-   "version": "v7",
-   "lastModified": "2016-05-31",
-   "files": {
-    "regular": "http://fonts.gstatic.com/s/montserrat/v7/Kqy6-utIpx_30Xzecmeo8_esZW2xOQ-xsNqO47m55DA.ttf",
-    "700": "http://fonts.gstatic.com/s/montserrat/v7/IQHow_FEYlDC4Gzy_m8fcgJKKGfqHaYFsRG-T3ceEVo.ttf"
-   }
-  },
-  {
-   "kind": "webfonts#webfont",
    "family": "Montserrat Alternates",
    "category": "sans-serif",
    "variants": [
@@ -10079,32 +10061,6 @@
     "700italic": "http://fonts.gstatic.com/s/opensans/v13/PRmiXeptR36kaC0GEAetxne1Pd76Vl7zRpE7NLJQ7XU.ttf",
     "800": "http://fonts.gstatic.com/s/opensans/v13/EInbV5DfGHOiMmvb1Xr-hi3USBnSvpkopQaUR-2r7iU.ttf",
     "800italic": "http://fonts.gstatic.com/s/opensans/v13/PRmiXeptR36kaC0GEAetxg89PwPrYLaRFJ-HNCU9NbA.ttf"
-   }
-  },
-  {
-   "kind": "webfonts#webfont",
-   "family": "Open Sans Condensed",
-   "category": "sans-serif",
-   "variants": [
-    "300",
-    "300italic",
-    "700"
-   ],
-   "subsets": [
-    "latin-ext",
-    "cyrillic-ext",
-    "cyrillic",
-    "greek",
-    "vietnamese",
-    "latin",
-    "greek-ext"
-   ],
-   "version": "v10",
-   "lastModified": "2016-05-20",
-   "files": {
-    "300": "http://fonts.gstatic.com/s/opensanscondensed/v10/gk5FxslNkTTHtojXrkp-xEMwSSh38KQVJx4ABtsZTnA.ttf",
-    "300italic": "http://fonts.gstatic.com/s/opensanscondensed/v10/jIXlqT1WKafUSwj6s9AzV4_LkTZ_uhAwfmGJ084hlvM.ttf",
-    "700": "http://fonts.gstatic.com/s/opensanscondensed/v10/gk5FxslNkTTHtojXrkp-xBEM87DM3yorPOrvA-vB930.ttf"
    }
   },
   {

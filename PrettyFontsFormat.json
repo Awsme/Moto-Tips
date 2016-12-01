@@ -1,5 +1,123 @@
 [
     {
+        "kind": "Open Sans Condensed",
+        "family": "Open Sans Condensed",
+        "category": "sans-serif",
+        "variants": [
+            "300",
+            "300italic",
+            "700"
+        ],
+        "subsets": [
+            "latin-ext",
+            "cyrillic-ext",
+            "cyrillic",
+            "greek",
+            "vietnamese",
+            "latin",
+            "greek-ext"
+        ],
+        "version": "v10",
+        "lastModified": "2016-05-20",
+        "active_variants": [
+            "300",
+            "300italic",
+            "700"
+        ],
+        "active_subsets": [
+            "latin-ext",
+            "cyrillic-ext",
+            "cyrillic",
+            "greek",
+            "vietnamese",
+            "latin",
+            "greek-ext"
+        ],
+        "provider": "google",
+        "active": true
+    },
+    {
+        "kind": "Great Vibes",
+        "family": "Great Vibes",
+        "category": "handwriting",
+        "variants": [
+            "regular"
+        ],
+        "subsets": [
+            "latin-ext",
+            "latin"
+        ],
+        "version": "v4",
+        "lastModified": "2016-05-31",
+        "active_variants": [
+            "regular"
+        ],
+        "active_subsets": [
+            "latin-ext",
+            "latin"
+        ],
+        "provider": "google",
+        "active": true
+    },
+    {
+        "kind": "Rouge Script",
+        "family": "Rouge Script",
+        "category": "handwriting",
+        "variants": [
+            "regular"
+        ],
+        "subsets": [
+            "latin"
+        ],
+        "version": "v5",
+        "lastModified": "2016-05-31",
+        "active_variants": [
+            "regular"
+        ],
+        "active_subsets": [
+            "latin"
+        ],
+        "provider": "google",
+        "active": true
+    },
+    {
+        "kind": "Changa",
+        "family": "'Changa' sans-serif",
+        "category": "sans-serif",
+        "variants": [
+            "200",
+            "300",
+            "regular",
+            "500",
+            "600",
+            "700",
+            "800"
+        ],
+        "subsets": [
+            "latin-ext",
+            "latin",
+            "arabic"
+        ],
+        "version": "v2",
+        "lastModified": "2016-06-20",
+        "active_variants": [
+            "200",
+            "300",
+            "regular",
+            "500",
+            "600",
+            "700",
+            "800"
+        ],
+        "active_subsets": [
+            "latin-ext",
+            "latin",
+            "arabic"
+        ],
+        "provider": "google",
+        "active": true
+    },
+    {
         "kind": "Permanent Marker",
         "family": "Permanent Marker",
         "category": "handwriting",
