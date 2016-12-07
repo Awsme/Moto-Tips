@@ -21,7 +21,7 @@
     .moto-widget-social-links-link_twitter    { &:before { content: "\f081"; } }
     .moto-widget-social-links-link_pinterest  { &:before { content: "\f0d3"; } }
     .moto-widget-social-links-link_linkedin   { &:before { content: "\f08c"; } }
-    .moto-widget-social-links-link_instagram  { &:before { content: "\f16d"; } } 
+    .moto-widget-social-links-link_instagram  { &:before { content: "\f16d"; } }
 
     //general
     .moto-widget-social-links-link_facebook   { &:before { content: "\f09a"; } }
