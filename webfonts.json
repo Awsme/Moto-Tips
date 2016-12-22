@@ -1163,29 +1163,6 @@
   },
   {
    "kind": "webfonts#webfont",
-   "family": "Asap",
-   "category": "sans-serif",
-   "variants": [
-    "regular",
-    "italic",
-    "700",
-    "700italic"
-   ],
-   "subsets": [
-    "latin-ext",
-    "latin"
-   ],
-   "version": "v4",
-   "lastModified": "2016-06-07",
-   "files": {
-    "regular": "http://fonts.gstatic.com/s/asap/v4/2lf-1MDR8tsTpEtvJmr2hA.ttf",
-    "italic": "http://fonts.gstatic.com/s/asap/v4/mwxNHf8QS8gNWCAMwkJNIg.ttf",
-    "700": "http://fonts.gstatic.com/s/asap/v4/o5RUA7SsJ80M8oDFBnrDbg.ttf",
-    "700italic": "http://fonts.gstatic.com/s/asap/v4/_rZz9y2oXc09jT5T6BexLQ.ttf"
-   }
-  },
-  {
-   "kind": "webfonts#webfont",
    "family": "Asar",
    "category": "serif",
    "variants": [
@@ -8755,37 +8732,6 @@
   },
   {
    "kind": "webfonts#webfont",
-   "family": "Merriweather Sans",
-   "category": "sans-serif",
-   "variants": [
-    "300",
-    "300italic",
-    "regular",
-    "italic",
-    "700",
-    "700italic",
-    "800",
-    "800italic"
-   ],
-   "subsets": [
-    "latin-ext",
-    "latin"
-   ],
-   "version": "v8",
-   "lastModified": "2016-05-31",
-   "files": {
-    "300": "http://fonts.gstatic.com/s/merriweathersans/v8/6LmGj5dOJopQKEkt88Gowan5N8K-_DP0e9e_v51obXQ.ttf",
-    "300italic": "http://fonts.gstatic.com/s/merriweathersans/v8/nAqt4hiqwq3tzCecpgPmVdytE4nGXk2hYD5nJ740tBw.ttf",
-    "regular": "http://fonts.gstatic.com/s/merriweathersans/v8/AKu1CjQ4qnV8MUltkAX3sOAj_ty82iuwwDTNEYXGiyQ.ttf",
-    "italic": "http://fonts.gstatic.com/s/merriweathersans/v8/3Mz4hOHzs2npRMG3B1ascZ32VBCoA_HLsn85tSWZmdo.ttf",
-    "700": "http://fonts.gstatic.com/s/merriweathersans/v8/6LmGj5dOJopQKEkt88GowbqxG25nQNOioCZSK4sU-CA.ttf",
-    "700italic": "http://fonts.gstatic.com/s/merriweathersans/v8/nAqt4hiqwq3tzCecpgPmVbuqAJxizi8Dk_SK5et7kMg.ttf",
-    "800": "http://fonts.gstatic.com/s/merriweathersans/v8/6LmGj5dOJopQKEkt88GowYufzO2zUYSj5LqoJ3UGkco.ttf",
-    "800italic": "http://fonts.gstatic.com/s/merriweathersans/v8/nAqt4hiqwq3tzCecpgPmVdDmPrYMy3aZO4LmnZsxTQw.ttf"
-   }
-  },
-  {
-   "kind": "webfonts#webfont",
    "family": "Metal",
    "category": "display",
    "variants": [
@@ -11121,22 +11067,6 @@
    "lastModified": "2016-05-31",
    "files": {
     "regular": "http://fonts.gstatic.com/s/princesssofia/v4/8g5l8r9BM0t1QsXLTajDe-wjmA7ie-lFcByzHGRhCIg.ttf"
-   }
-  },
-  {
-   "kind": "webfonts#webfont",
-   "family": "Prociono",
-   "category": "serif",
-   "variants": [
-    "regular"
-   ],
-   "subsets": [
-    "latin"
-   ],
-   "version": "v6",
-   "lastModified": "2016-05-31",
-   "files": {
-    "regular": "http://fonts.gstatic.com/s/prociono/v6/43ZYDHWogdFeNBWTl6ksmw.ttf"
    }
   },
   {

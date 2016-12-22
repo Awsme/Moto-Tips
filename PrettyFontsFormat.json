@@ -1,5 +1,138 @@
 [
     {
+        "kind": "Prociono",
+        "family": "Prociono",
+        "category": "serif",
+        "variants": [
+            "regular"
+        ],
+        "subsets": [
+            "latin"
+        ],
+        "version": "v6",
+        "lastModified": "2016-05-31",
+        "active_variants": [
+            "regular"
+        ],
+        "active_subsets": [
+            "latin"
+        ],
+        "provider": "google",
+        "active": true
+    },
+    {
+        "kind": "Merriweather Sans",
+        "family": "Merriweather Sans",
+        "category": "sans-serif",
+        "variants": [
+            "300",
+            "300italic",
+            "regular",
+            "italic",
+            "700",
+            "700italic",
+            "800",
+            "800italic"
+        ],
+        "subsets": [
+            "latin-ext",
+            "latin"
+        ],
+        "active_variants": [
+            "300",
+            "300italic",
+            "regular",
+            "italic",
+            "700",
+            "700italic",
+            "800",
+            "800italic"
+        ],
+        "active_subsets": [
+            "latin-ext",
+            "latin"
+        ],
+        "version": "v8",
+        "lastModified": "2016-05-31",
+        "provider": "google",
+        "active": true
+    },
+    {
+        "kind": "Asap",
+        "family": "Asap",
+        "category": "sans-serif",
+        "variants": [
+            "regular",
+            "italic",
+            "700",
+            "700italic"
+        ],
+        "subsets": [
+            "latin-ext",
+            "latin"
+        ],
+        "version": "v4",
+        "lastModified": "2016-06-07",
+        "active_variants": [
+            "regular",
+            "italic",
+            "700",
+            "700italic"
+        ],
+        "active_subsets": [
+            "latin-ext",
+            "latin"
+        ],
+        "provider": "google",
+        "active": true
+    },
+    {
+        "kind": "Droid Sans",
+        "family": "Droid Sans",
+        "category": "sans-serif",
+        "variants": [
+            "regular",
+            "700"
+        ],
+        "subsets": [
+            "latin"
+        ],
+        "version": "v6",
+        "lastModified": "2016-05-20",
+        "active_variants": [
+            "regular",
+            "700"
+        ],
+        "active_subsets": [
+            "latin"
+        ],
+        "provider": "google",
+        "active": true
+    },
+    {
+        "kind": "Racing Sans One",
+        "family": "Racing Sans One",
+        "category": "display",
+        "variants": [
+            "regular"
+        ],
+        "subsets": [
+            "latin-ext",
+            "latin"
+        ],
+        "version": "v4",
+        "lastModified": "2016-05-31",
+        "active_variants": [
+            "regular"
+        ],
+        "active_subsets": [
+            "latin-ext",
+            "latin"
+        ],
+        "provider": "google",
+        "active": true
+    },
+    {
         "kind": "Open Sans Condensed",
         "family": "Open Sans Condensed",
         "category": "sans-serif",

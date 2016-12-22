@@ -1,3 +1,9 @@
+"theme_widget_grid_gallery__html_caption": 1,
+"theme_widget_slider__html_caption": 1
+
+
+url("@{currentThemeUrl}/images/example.img");
+
 // FLASH
 // mt-0484, mt-0482
 
@@ -16,103 +22,103 @@
 &.moto-widget-social-links-link_instagram  { &:before { color: #34638a; }}
 
 
-    .moto-widget-social-links-link_facebook   { &:before { content: "\f082"; } }
-    .moto-widget-social-links-link_googleplus { &:before { content: "\f0d4"; } }
-    .moto-widget-social-links-link_twitter    { &:before { content: "\f081"; } }
-    .moto-widget-social-links-link_pinterest  { &:before { content: "\f0d3"; } }
-    .moto-widget-social-links-link_linkedin   { &:before { content: "\f08c"; } }
-    .moto-widget-social-links-link_instagram  { &:before { content: "\f16d"; } }
+.moto-widget-social-links-link_facebook   { &:before { content: "\f082"; } }
+.moto-widget-social-links-link_googleplus { &:before { content: "\f0d4"; } }
+.moto-widget-social-links-link_twitter    { &:before { content: "\f081"; } }
+.moto-widget-social-links-link_pinterest  { &:before { content: "\f0d3"; } }
+.moto-widget-social-links-link_linkedin   { &:before { content: "\f08c"; } }
+.moto-widget-social-links-link_instagram  { &:before { content: "\f16d"; } }
 
-    //general
-    .moto-widget-social-links-link_facebook   { &:before { content: "\f09a"; } }
-    .moto-widget-social-links-link_googleplus { &:before { content: "\f0d5"; } }
-    .moto-widget-social-links-link_twitter    { &:before { content: "\f099"; } }
-    .moto-widget-social-links-link_pinterest  { &:before { content: "\f0d2"; } }
-    .moto-widget-social-links-link_linkedin   { &:before { content: "\f0e1"; } }
-    .moto-widget-social-links-link_instagram  { &:before { content: "\f16d"; } } 
+//general
+.moto-widget-social-links-link_facebook   { &:before { content: "\f09a"; } }
+.moto-widget-social-links-link_googleplus { &:before { content: "\f0d5"; } }
+.moto-widget-social-links-link_twitter    { &:before { content: "\f099"; } }
+.moto-widget-social-links-link_pinterest  { &:before { content: "\f0d2"; } }
+.moto-widget-social-links-link_linkedin   { &:before { content: "\f0e1"; } }
+.moto-widget-social-links-link_instagram  { &:before { content: "\f16d"; } } 
 
-    //CF mailchimp
-    &.moto-preset-3 {
-        .moto-widget-contact_form-group {
-            display: inline-block;
-            .moto-widget-contact_form-field {
-                display: inline-block;
-                height: 50px;
-                font-size: 14px;
-                padding: 10px 20px;
-                line-height: 1.2;
-                width: 350px;
-                border: 1px solid;
-                margin-bottom: 0;
-            }
-            @media screen and (max-width: @const_media_tablet_max_width) {
-                display: block;
-                .moto-widget-contact_form-field {
-                    display: block;
-                    width: 100%;
-                }
-            }
-        }
-        .moto-widget-contact_form-buttons {
-            margin-top: 0;
-            display: inline-block;
-            position: absolute;
-            top: 0;
-            margin-left: 8px;
-            @media screen and (max-width: @const_media_tablet_max_width) {
-                margin-left: 0;
-                margin-top: 12px;
-                display: block;
-                position: relative;
-            }
-        }
-        .moto-widget-contact_form-success, .moto-widget-contact_form-danger { 
-            position: absolute;
-            @media screen and (max-width: @const_media_tablet_max_width) {
-                position: relative;
-            }
-        }
-    }
-    // ENTRY BUTTON
-    &.moto-preset-3 {
+//CF mailchimp
+&.moto-preset-3 {
+    .moto-widget-contact_form-group {
         display: inline-block;
-        .moto-widget-contact_form-group {
+        .moto-widget-contact_form-field {
             display: inline-block;
+            height: 50px;
+            font-size: 14px;
+            padding: 10px 20px;
+            line-height: 1.2;
+            width: 350px;
+            border: 1px solid;
+            margin-bottom: 0;
+        }
+        @media screen and (max-width: @const_media_tablet_max_width) {
+            display: block;
             .moto-widget-contact_form-field {
-                display: inline-block;
-                height: 47px;
-                font-size: 16px;
-                padding: 8px 72px 8px 17px;
-                line-height: 24px;
-                border-radius: 5px;
-                width: 570px;
-                border: 1px solid;
-                margin-bottom: 0;
-            }
-            @media screen and (max-width: @const_media_tablet_max_width) {
                 display: block;
-                .moto-widget-contact_form-field {
-                    display: block;
-                    width: 100%;
-                }
-            }
-        }
-        .moto-widget-contact_form-buttons {
-            position: absolute;
-            top: 0;
-            right: 0;
-            margin: 0;
-            .moto-widget-button-link {
-                border-radius: 0 5px 5px 0;
-            }
-        }
-        .moto-widget-contact_form-success, .moto-widget-contact_form-danger { 
-            position: absolute;
-            @media screen and (max-width: @const_media_tablet_max_width) {
-                position: relative;
+                width: 100%;
             }
         }
     }
+    .moto-widget-contact_form-buttons {
+        margin-top: 0;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        margin-left: 8px;
+        @media screen and (max-width: @const_media_tablet_max_width) {
+            margin-left: 0;
+            margin-top: 12px;
+            display: block;
+            position: relative;
+        }
+    }
+    .moto-widget-contact_form-success, .moto-widget-contact_form-danger { 
+        position: absolute;
+        @media screen and (max-width: @const_media_tablet_max_width) {
+            position: relative;
+        }
+    }
+}
+// ENTRY BUTTON
+&.moto-preset-3 {
+    display: inline-block;
+    .moto-widget-contact_form-group {
+        display: inline-block;
+        .moto-widget-contact_form-field {
+            display: inline-block;
+            height: 47px;
+            font-size: 16px;
+            padding: 8px 72px 8px 17px;
+            line-height: 24px;
+            border-radius: 5px;
+            width: 570px;
+            border: 1px solid;
+            margin-bottom: 0;
+        }
+        @media screen and (max-width: @const_media_tablet_max_width) {
+            display: block;
+            .moto-widget-contact_form-field {
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+    .moto-widget-contact_form-buttons {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+        .moto-widget-button-link {
+            border-radius: 0 5px 5px 0;
+        }
+    }
+    .moto-widget-contact_form-success, .moto-widget-contact_form-danger { 
+        position: absolute;
+        @media screen and (max-width: @const_media_tablet_max_width) {
+            position: relative;
+        }
+    }
+}
 
 // Mixins
 // Gallery: 
@@ -135,4 +141,47 @@
     left: 0;
     right: 0;
     text-align: center;
+}
+
+
+// Styles for preloader to CF
+.contact-form-loading {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+
+  position: relative;
+  &:before, &:after {
+    content: "";
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background-color: @baseColor1_3;
+      opacity: 0.6;
+      position: absolute;
+      top: 0;
+      left: 0;
+      
+      -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+      animation: sk-bounce 2.0s infinite ease-in-out;
+    }
+    &:after {
+      -webkit-animation-delay: -1.0s;
+      animation-delay: -1.0s;
+    }
+}
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bounce {
+  0%, 100% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% { 
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
 }
