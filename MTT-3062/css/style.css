@@ -1,0 +1,62 @@
+input[type="checkbox"] {
+	display: none;
+}
+label {
+	cursor: pointer;
+}
+textarea {
+	padding: 4px;
+	min-height: 200px;
+	max-width: 300px;
+	width: 100%
+}
+
+td {
+	border: 1px solid black;
+}
+
+.receiveSub {
+	margin-bottom: 45px;
+}
+.labelForCheckbox {
+	color: #767779;
+	-webkit-user-select: none;
+}
+.labelForCheckbox:before {
+	border: 1px solid #767779;
+	content: "\00a0";
+	display: inline-block;
+	font: 16px/1em sans-serif;
+	height: 16px;
+	margin: 0 7px 0 0;
+	padding:0;
+	vertical-align: top;
+	width: 16px;
+}
+
+.cf-item {
+	margin-bottom: 16px;
+}
+.cf-item input {
+	padding: 4px;
+	border: 1px solid #d9d7d8;
+}
+input[type="checkbox"]:checked + label:before {
+  background: #fff;
+  color: #666;
+  content: "\2713";
+  text-align: center;
+}
+input[type="checkbox"]:checked + label:after {
+  font-weight: bold;
+}
+
+.interested-list {
+	margin-bottom: 45px;
+}
+.interested-list h4 {
+	color: #767779;
+}
+.interested-list .receiveSub {
+	margin-bottom: 15px;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CONTACT</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script>
+	  	function init() {
+	  		checkValidate();
+	  	}
+  	</script>
+</head>
+<body>
+	<form method="post" action="" class="customForm" id="form">
+		<div class="receiveSub">
+          <input type="checkbox" id="c1" name="receive">
+          <label for="c1" class="labelForCheckbox">I want to receive your catalog</label>
+        </div>
+		<div class="cf-item">
+			<input name="society" id="society" type="text" placeholder="Society" class="name">
+		</div>
+		<div class="cf-item">
+			<input name="contact_name" id="contact" type="text" placeholder="Contact Name">
+		</div>
+		<div class="cf-item">
+			<input name="phone" type="tel" class="phone" placeholder="Phone">
+		</div>
+		<div class="cf-item">
+			<input id="email" name="email" placeholder="Email" type="email" >
+			<span id="result" style="position: absolute; top:2px;font-size:12px;right:5px;"></span>	
+		</div>
+		<div class="interested-list">
+			<h4>I am interested in:</h4>
+			<div class="receiveSub">
+	          <input type="checkbox" id="c2" name="baby">
+	          <label for="c2" class="labelForCheckbox">Baby</label>
+	        </div>
+	        <div class="receiveSub">
+	          <input type="checkbox" id="c3" name="woman">
+	          <label for="c3" class="labelForCheckbox">Woman</label>
+	        </div>
+	        <div class="receiveSub">
+	          <input type="checkbox" id="c4" name="personal">
+	          <label for="c4" class="labelForCheckbox">Personal Care</label>
+	        </div>
+	        <div class="receiveSub">
+	          <input type="checkbox" id="c5" name="detergency">
+	          <label for="c5" class="labelForCheckbox">Detergency</label>
+	        </div>
+	        <div class="receiveSub">
+	          <input type="checkbox" id="c6" name="petcare">
+	          <label for="c6" class="labelForCheckbox">Petcare</label>
+	        </div>
+	        <div class="receiveSub">
+	          <input type="checkbox" id="c7" name="car">
+	          <label for="c7" class="labelForCheckbox">Car</label>
+	        </div>
+	        <div class="receiveSub">
+	          <input type="checkbox" id="c8" name="flushable">
+	          <label for="c8" class="labelForCheckbox">Flushable Products</label>
+	        </div>
+	        <div class="receiveSub">
+	          <input type="checkbox" id="c9" name="insect">
+	          <label for="c9" class="labelForCheckbox">Insect Repellents</label>
+	        </div>
+		</div>
+		<div class="cf-item">
+			<textarea placeholder="Message"></textarea>
+		</div>
+		<button type="submit" id="validate" class="submit-button"/>Submit</button>
+		<!-- <button type="submit" id="validate" class="submit-button" onclick="AjaxFormRequest('message', 'form', 'send.php')"/>Submit</button> -->
+		<span id="result_id"></span>
+	</form>
+	<!-- jQuerry CDN -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<script>
+		$('form').submit(function() {
+			var society = $.trim($('#society').val());
+			var contact = $.trim($('#contact').val());
+			var email   = $.trim($('#email').val());email
+			if (( name == '' ) && ( contact == '' ) && ( email == ''))  {
+				alert('Please Input Data');
+			}
+			else {
+				alert('Ur message has been sent');
+			}
+		});
+		// function AjaxFormRequest(result_id,formMain,url) {
+		//    jQuery.ajax({
+		//       url:      url,
+		//       type:     "POST",
+		//       dataType: "html",
+		//       data: jQuery("#"+formMain).serialize(),
+		//       success: function(response) {
+		//          document.getElementById(result_id).innerHTML = response;
+		//       },
+		//       error: function(response) {
+		//          document.getElementById(result_id).innerHTML = "Error! Try again later.";
+		//       }
+		//    });
+		// }
+	</script>
+</body>
+</html>
