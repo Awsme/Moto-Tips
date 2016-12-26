@@ -1,104 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>CONTACT</title>
-	<link rel="stylesheet" href="css/style.css">
-	<script>
-	  	function init() {
-	  		checkValidate();
-	  	}
-  	</script>
-</head>
-<body>
-	<form method="post" action="" class="customForm" id="form">
-		<div class="receiveSub">
-          <input type="checkbox" id="c1" name="receive">
-          <label for="c1" class="labelForCheckbox">I want to receive your catalog</label>
-        </div>
-		<div class="cf-item">
-			<input name="society" id="society" type="text" placeholder="Society" class="name">
+<html>
+	<head>
+	    <title>Contact form using Bootstrap 3.3.4</title>
+	    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	    <meta charset="utf-8">
+	    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div id="frmContact">
+			<div class="cf-item">
+				<input type="checkbox" id="userReceive" name="receive">
+          		<label for="userReceive" class="labelForCheckbox">I want to receive your catalog</label>
+			</div>
+
+			<div class="cf-item">
+		        <input type="text" name="userSociety" id="userSociety" placeholder="Society" class="demoInputBox"><br/>
+		        <span id="userSociety-info" class="info"></span>
+		    </div>
+
+		    <div class="cf-item">
+		        <input type="text" name="userName" id="userName" placeholder="Contact Name" class="demoInputBox"><br/>
+		        <span id="userName-info" class="info"></span>
+		    </div>
+		    <div class="cf-item">
+		        <input type="text" name="userEmail" id="userEmail" placeholder="Email" class="demoInputBox"><br/>
+		        <span id="userEmail-info" class="info"></span>
+		    </div>
+
+		    <div class="cf-item">
+		        <input type="text" name="userPhone" id="userPhone" placeholder="Phone" class="demoInputBox"><br/>
+		    </div>
+		    <div class="cf-item">
+		        <textarea name="userMessage" id="userMessage" class="demoInputBox" placeholder="Your Message" cols="60" rows="6"></textarea>
+		    </div>
+
+			<div class="interested-list" id="list">
+				<h4>I am interested in:</h4>
+				<div class="receiveSub">
+					<input type="checkbox" id="c2" name="baby">
+					<label for="c2" class="labelForCheckbox">Baby</label>
+		        </div>
+		        <div class="receiveSub">
+			        <input type="checkbox" id="c3" name="woman">
+			        <label for="c3" class="labelForCheckbox">Woman</label>
+		        </div>
+		        <div class="receiveSub">
+					<input type="checkbox" id="c4" name="personal">
+					<label for="c4" class="labelForCheckbox">Personal Care</label>
+		        </div>
+		        <div class="receiveSub">
+					<input type="checkbox" id="c5" name="detergency">
+					<label for="c5" class="labelForCheckbox">Detergency</label>
+		        </div>
+		        <div class="receiveSub">
+					<input type="checkbox" id="c6" name="petcare">
+					<label for="c6" class="labelForCheckbox">Petcare</label>
+		        </div>
+		        <div class="receiveSub">
+					<input type="checkbox" id="c7" name="car">
+					<label for="c7" class="labelForCheckbox">Car</label>
+		        </div>
+		        <div class="receiveSub">
+					<input type="checkbox" id="c8" name="flushable">
+					<label for="c8" class="labelForCheckbox">Flushable Products</label>
+		        </div>
+		        <div class="receiveSub">
+					<input type="checkbox" id="c9" name="insect">
+					<label for="c9" class="labelForCheckbox">Insect Repellents</label>
+		        </div>
+			</div>
+
+		    <div>
+		        <button name="submit" class="btnAction" onClick="sendContact();">Send</button>
+		    </div>
+		    <div id="mail-status"></div>
 		</div>
-		<div class="cf-item">
-			<input name="contact_name" id="contact" type="text" placeholder="Contact Name">
-		</div>
-		<div class="cf-item">
-			<input name="phone" type="tel" class="phone" placeholder="Phone">
-		</div>
-		<div class="cf-item">
-			<input id="email" name="email" placeholder="Email" type="email" >
-			<span id="result" style="position: absolute; top:2px;font-size:12px;right:5px;"></span>	
-		</div>
-		<div class="interested-list">
-			<h4>I am interested in:</h4>
-			<div class="receiveSub">
-	          <input type="checkbox" id="c2" name="baby">
-	          <label for="c2" class="labelForCheckbox">Baby</label>
-	        </div>
-	        <div class="receiveSub">
-	          <input type="checkbox" id="c3" name="woman">
-	          <label for="c3" class="labelForCheckbox">Woman</label>
-	        </div>
-	        <div class="receiveSub">
-	          <input type="checkbox" id="c4" name="personal">
-	          <label for="c4" class="labelForCheckbox">Personal Care</label>
-	        </div>
-	        <div class="receiveSub">
-	          <input type="checkbox" id="c5" name="detergency">
-	          <label for="c5" class="labelForCheckbox">Detergency</label>
-	        </div>
-	        <div class="receiveSub">
-	          <input type="checkbox" id="c6" name="petcare">
-	          <label for="c6" class="labelForCheckbox">Petcare</label>
-	        </div>
-	        <div class="receiveSub">
-	          <input type="checkbox" id="c7" name="car">
-	          <label for="c7" class="labelForCheckbox">Car</label>
-	        </div>
-	        <div class="receiveSub">
-	          <input type="checkbox" id="c8" name="flushable">
-	          <label for="c8" class="labelForCheckbox">Flushable Products</label>
-	        </div>
-	        <div class="receiveSub">
-	          <input type="checkbox" id="c9" name="insect">
-	          <label for="c9" class="labelForCheckbox">Insect Repellents</label>
-	        </div>
-		</div>
-		<div class="cf-item">
-			<textarea placeholder="Message"></textarea>
-		</div>
-		<button type="submit" id="validate" class="submit-button"/>Submit</button>
-		<!-- <button type="submit" id="validate" class="submit-button" onclick="AjaxFormRequest('message', 'form', 'send.php')"/>Submit</button> -->
-		<span id="result_id"></span>
-	</form>
-	<!-- jQuerry CDN -->
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-	<script>
-		$('form').submit(function() {
-			var society = $.trim($('#society').val());
-			var contact = $.trim($('#contact').val());
-			var email   = $.trim($('#email').val());email
-			if (( name == '' ) && ( contact == '' ) && ( email == ''))  {
-				alert('Please Input Data');
+		<script>
+			function validateContact() {
+			    var valid = true;	
+			    $(".demoInputBox").css('background-color','');
+			    $(".info").html('');
+			    if(!$("#userSociety").val()) {
+			        $("#userSociety-info").html("required");
+			        valid = false;
+			    }
+			    if(!$("#userName").val()) {
+			        $("#userName-info").html("required");
+			        valid = false;
+			    }
+			    if((!$("#userEmail").val().match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/)) || ($("#userEmail").val() == "")) {
+			        $("#userEmail-info").html("required or invalid");
+			        valid = false;	
+			    }
+			    return valid;
 			}
-			else {
-				alert('Ur message has been sent');
+			function sendContact() {
+			    var valid;
+			    valid = validateContact();
+			    if(valid) {
+			    	var interestedList  = [];
+			    	 	userSociety 	= $("#userSociety").val();
+			    		userName 		= $("#userName").val();
+			    		userEmail 		= $("#userEmail").val();
+			    		userPhone 		= $("#userPhone").val();
+			    		userMessage 	= $("#userMessage").val();
+			    		userData 		= {
+			    			userSociety: userSociety,
+			    			userName: userName,
+			    			userEmail: userEmail,
+			    			userPhone: userPhone,
+			    			userMessage: userMessage
+			    		};
+					if ($("#userReceive").attr('checked', true)) {
+						userData['userReceive'] =  'true';
+					}
+					$('#list .receiveSub input:checked').each(function() {
+					    interestedList.push($(this).attr('name'));
+					    userData['userCheckedList'] = interestedList;
+					});
+					console.log(interestedList);
+			        jQuery.ajax({
+			            url:  "send.php",
+			            data: userData,
+			            type: "POST",
+			            success:function(data){
+			                $("#mail-status").html(data);
+			            },
+			            error:function (){}
+			        });
+			    }
 			}
-		});
-		// function AjaxFormRequest(result_id,formMain,url) {
-		//    jQuery.ajax({
-		//       url:      url,
-		//       type:     "POST",
-		//       dataType: "html",
-		//       data: jQuery("#"+formMain).serialize(),
-		//       success: function(response) {
-		//          document.getElementById(result_id).innerHTML = response;
-		//       },
-		//       error: function(response) {
-		//          document.getElementById(result_id).innerHTML = "Error! Try again later.";
-		//       }
-		//    });
-		// }
-	</script>
-</body>
+		</script>
+		<!-- Add CDN -->
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</body>
 </html>
+	

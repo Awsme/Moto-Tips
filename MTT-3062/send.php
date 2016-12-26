@@ -1,75 +1,53 @@
 <?php
+    $toEmail  = "info@stenago.com";
+    $subject  = "Feedback from Your site";
+    $headers  = "Content-type: text/html; charset=utf-8 \r\n"; //Кодировка письма
+    $headers .= "From: <site@stenago.com>\r\n"; //Наименование и почта отправителя
+    $userReceive = '';
+    $userMessage = '';
+    $interestedList = '';
 
-    $mailSubject = "Feedback";
-
-    $receive = isset($_POST['receive']) ? 'On' : 'Off';
-    $baby = isset($_POST['baby']) ? 'On' : 'Off';
-    $woman = isset($_POST['woman']) ? 'On' : 'Off';
-    $personal = isset($_POST['personal']) ? 'On' : 'Off';
-    $detergency = isset($_POST['detergency']) ? 'On' : 'Off';
-    $petcare = isset($_POST['petcare']) ? 'On' : 'Off';
-    $car = isset($_POST['car']) ? 'On' : 'Off';
-    $flushable = isset($_POST['flushable']) ? 'On' : 'Off';
-    $insect = isset($_POST['insect']) ? 'On' : 'Off';
-
-    if((isset($_POST['society'])) && (isset($_POST['contact_name'])) && (isset($_POST['phone'])) && (isset($_POST['email'])))  {
-
-        $to = 'gitawsme@gmail.com'; //Почта получателя, через запятую можно указать сколько угодно адресов
-        $subject = 'Feedback'; //Загаловок сообщения
-        $message = '
-                <html>
-                    <head>
-                        <title>'.$mailSubject.'</title>
-                    </head>
-                    <body>
-                        <div style="text-align: center;">
-                            <table border="1px" cellpadding="5px" style="margin-bottom: 5px;">
-                                <tr><td colspan="8" align="center">Client Info</td></tr>
-                                <tr bgcolor="silver">
-                                    <td>Subscribe Status</td>
-                                    <td>Society</td>
-                                    <td>Contact Name</td>
-                                    <td>Phone</td>
-                                    <td>Email</td>
-                                </tr>
-                                <tr>
-                                    <td>'. $receive .'</td>
-                                    <td>'. $_POST['society'] .'</td>
-                                    <td>'. $_POST['contact_name'] .'</td>
-                                    <td>'. $_POST['phone'] .'</td>
-                                    <td>'. $_POST['email'] .'</td>
-                                </tr>
-                            </table>
-                            <table border="1px" cellpadding="5px">
-                                <tr><td colspan="8" align="center">Checked Boxes</td></tr>
-                                <tr bgcolor="silver">
-                                    <td>baby</td>
-                                    <td>woman</td>
-                                    <td>personal</td>
-                                    <td>detergency</td>
-                                    <td>petcare</td>
-                                    <td>car</td>
-                                    <td>flushable</td>
-                                    <td>insect</td>
-                                </tr>
-                                <tr>
-                                    <td>'. $baby .'</td>
-                                    <td>'. $woman .'</td>
-                                    <td>'. $personal .'</td>
-                                    <td>'. $detergency .'</td>
-                                    <td>'. $petcare .'</td>
-                                    <td>'. $car .'</td>
-                                    <td>'. $flushable .'</td>
-                                    <td>'. $insect .'</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </body>
-                </html>';
-        $headers  = "Content-type: text/html; charset=utf-8 \r\n"; //Кодировка письма
-        $headers .= "From: <site@stenago.com>\r\n"; //Наименование и почта отправителя
-        //mail($to, $subject, $message, $headers); //Отправка письма с помощью функции mail
-        echo $message;
+    if(isset($_POST['userCheckedList'])) {
+        $interestedList = $_POST['userCheckedList'];
+    } else {
+        $interestedList = 'Nothing';
     }
-    //var_dump(mail($to, $subject, $message, $headers));
+
+    if( isset($_POST['userReceive']) ) {
+        $userReceive = 'I <b>want</b> receive Messages';
+    } else {
+        $userReceive = 'I <b>dont want</b> receive Messages';
+    }
+
+    $messageText = '
+        <html>
+            <head>
+                <title>'.$subject.'</title>
+            </head>
+            <body>
+                <p style="font-size: 16px; color: black;">
+                    <i>
+                        <b>Receive: </b> '. $userReceive .'<br>
+                        <b>Society: </b> '. $_POST['userSociety'] .'<br>
+                        <b>Name:    </b> '. $_POST['userName'] .'<br>
+                        <b>Email:   </b> '. $_POST['userEmail'] .'<br>
+                        <b>Phone:   </b> '. $_POST['userPhone'] .'<br>
+                        <b>Message: </b> '. $_POST['userMessage'] .'<br>
+                    </i>
+                </p>
+                <p style="font-size: 14px;">
+                    Im interesting in: <b>'; 
+                    foreach ($interestedList as $key => $value) {
+                        $messageText .= $value . ", ";
+                    };
+                    $messageText .= '</b>
+                </p>
+            </body>
+        </html>';
+
+    if(mail($toEmail, $subject, $messageText, $headers)) {
+        print "<p class='success' style='color: green'>Mail Sent.</p>";
+    } else {
+        print "<p class='Error' style='color: red'>Problem in Sending Mail.</p>";
+    }
 ?>

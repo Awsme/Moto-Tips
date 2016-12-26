@@ -1,19 +1,53 @@
-function validateForm() {
-	var society = $("#society").val();
-	var contact = $.trim($('#contact').val());
-    var email   = $("#email").val();
+$("#contactForm").submit(function(event){
+    // cancels the form submission
+    event.preventDefault();
+    submitForm();
+});
 
-    if (validateEmail(email) && ()) {
-        return true;
+function submitForm(){
+    // Initiate Variables With Form Content
+    var name = $("#name").val();
+    var email = $("#email").val();
+    var message = $("#message").val();
+ 
+    $.ajax({
+        type: "POST",
+        url: "php/send.php",
+        data: "name=" + name + "&email=" + email + "&message=" + message,
+        success : function(text){
+            if (text == "success"){
+                formSuccess();
+            }
+        }
+    });
+}
+
+function formSuccess(){
+    $( "#msgSubmit" ).removeClass( "hidden" );
+}
+
+function formError(){
+    $("#contactForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+        $(this).removeClass();
+    });
+}
+
+$("#contactForm").validator().on("submit", function (event) {
+    if (event.isDefaultPrevented()) {
+        // handle the invalid form...
     } else {
-        $("#result_id").text("Please input valid data.");
-        return false;
+        // everything looks good!
+        event.preventDefault();
+        submitForm();
     }
-}
+});
 
-function validateEmail(email) {
-    var re = /^[\w-']+(\.[\w-']+)*@([a-zA-Z0-9]+[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*?\.[a-zA-Z]{2,6}|(\d{1,3}\.){3}\d{1,3})(:\d{4})?$/;
-    return re.test(email);
+function submitMSG(valid, msg){
+        var msgClasses;
+    if(valid){
+        msgClasses = "h3 text-center tada animated text-success";
+    } else {
+        msgClasses = "h3 text-center text-danger";
+    }
+    $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
 }
-
-$("form").bind("submit", checkValidate);
