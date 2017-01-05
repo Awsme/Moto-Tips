@@ -1,5 +1,53 @@
 [
     {
+        "kind": "Vollkorn",
+        "family": "Vollkorn",
+        "category": "serif",
+        "variants": [
+            "regular",
+            "italic",
+            "700",
+            "700italic"
+        ],
+        "subsets": [
+            "latin"
+        ],
+        "version": "v6",
+        "lastModified": "2016-05-31",
+        "active_variants": [
+            "regular",
+            "italic",
+            "700",
+            "700italic"
+        ],
+        "active_subsets": [
+            "latin"
+        ],
+        "provider": "google",
+        "active": true
+    },
+    {
+        "kind": "Gloria Hallelujah",
+        "family": "Gloria Hallelujah",
+        "category": "handwriting",
+        "variants": [
+            "regular"
+        ],
+        "subsets": [
+            "latin"
+        ],
+        "version": "v8",
+        "lastModified": "2016-05-31",
+        "active_variants": [
+            "regular"
+        ],
+        "active_subsets": [
+            "latin"
+        ],
+        "provider": "google",
+        "active": true
+    },
+    {
         "kind": "Prociono",
         "family": "Prociono",
         "category": "serif",
