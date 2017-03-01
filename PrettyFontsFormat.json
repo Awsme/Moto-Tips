@@ -1329,23 +1329,59 @@
         "active": true
     },
     {
-        "name": "Montserrat",
-        "family": "'Montserrat', sans-serif",
+        "kind": "Montserrat",
+        "family": "Montserrat",
         "category": "sans-serif",
         "variants": [
+            "100",
+            "100italic",
+            "200",
+            "200italic",
+            "300",
+            "300italic",
             "regular",
-            "700"
+            "italic",
+            "500",
+            "500italic",
+            "600",
+            "600italic",
+            "700",
+            "700italic",
+            "800",
+            "800italic",
+            "900",
+            "900italic"
         ],
         "subsets": [
+            "vietnamese",
+            "latin-ext",
             "latin"
         ],
-        "version": "v6",
-        "last_modified": "2014-10-07",
+        "version": "v10",
+        "lastModified": "2017-02-09",
         "active_variants": [
+            "100",
+            "100italic",
+            "200",
+            "200italic",
+            "300",
+            "300italic",
             "regular",
-            "700"
+            "italic",
+            "500",
+            "500italic",
+            "600",
+            "600italic",
+            "700",
+            "700italic",
+            "800",
+            "800italic",
+            "900",
+            "900italic"
         ],
         "active_subsets": [
+            "vietnamese",
+            "latin-ext",
             "latin"
         ],
         "provider": "google",
