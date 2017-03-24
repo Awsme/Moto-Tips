@@ -1,0 +1,61 @@
+/*
+ * Latest version of MotoStore Plugin
+ * http://motostore.motocms.com/downloads/latest/moto-store-plugin-latest.zip
+ *
+ * FontAwesome CDN
+ * https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
+ *
+ * Flash themes for examples: mt-0484, mt-0482
+ */
+
+&.moto-widget-social-links-link_facebook   { background-color: #3a5a9f; }
+&.moto-widget-social-links-link_googleplus { background-color: #d61119; }
+&.moto-widget-social-links-link_twitter    { background-color: #45b0e3; }
+&.moto-widget-social-links-link_pinterest  { background-color: #bd2126; }
+&.moto-widget-social-links-link_linkedin   { background-color: #1783bc; }
+&.moto-widget-social-links-link_instagram  { background-color: #34638a; }
+
+&.moto-widget-social-links-link_facebook   { &:before { color: #3a5a9f; }}
+&.moto-widget-social-links-link_googleplus { &:before { color: #d61119; }}
+&.moto-widget-social-links-link_twitter    { &:before { color: #45b0e3; }}
+&.moto-widget-social-links-link_pinterest  { &:before { color: #bd2126; }}
+&.moto-widget-social-links-link_linkedin   { &:before { color: #1783bc; }}
+&.moto-widget-social-links-link_instagram  { &:before { color: #34638a; }}
+
+.moto-widget-social-links-link_facebook   { &:before { content: "\f082"; } }
+.moto-widget-social-links-link_googleplus { &:before { content: "\f0d4"; } }
+.moto-widget-social-links-link_twitter    { &:before { content: "\f081"; } }
+.moto-widget-social-links-link_pinterest  { &:before { content: "\f0d3"; } }
+.moto-widget-social-links-link_linkedin   { &:before { content: "\f08c"; } }
+.moto-widget-social-links-link_instagram  { &:before { content: "\f16d"; } }
+
+.moto-widget-social-links-link_facebook   { &:before { content: "\f09a"; } }
+.moto-widget-social-links-link_googleplus { &:before { content: "\f0d5"; } }
+.moto-widget-social-links-link_twitter    { &:before { content: "\f099"; } }
+.moto-widget-social-links-link_pinterest  { &:before { content: "\f0d2"; } }
+.moto-widget-social-links-link_linkedin   { &:before { content: "\f0e1"; } }
+.moto-widget-social-links-link_instagram  { &:before { content: "\f16d"; } } 
+
+/*
+ * Test mixin
+ */
+.caption_center( @top: 50%; ) {
+    top: @top;
+    bottom: auto;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+.icon_center( @content: "\f002"; @top: 50%; @left: 50%; ) {
+    content: @content;
+    top: @top;
+    left: @left;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+.icon_center_bottom( @content: "\f002"; @bottom: 5px; ) {
+    content: @content;
+    bottom: @bottom;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
