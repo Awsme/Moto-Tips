@@ -1,3 +1,5 @@
+# Rajdhani
+INSERT INTO `DB_NAME`.`fonts` (`id`, `name`, `family`, `category`, `variants`, `subsets`, `version`, `last_modified`, `active`, `active_variants`, `active_subsets`, `provider`, `created`, `modified`, `del`) VALUES ('NEW_ID', 'Rajdhani', '''Rajdhani'', sans-serif', 'sans-serif', '["300","regular","500","600","700"]', '["latin-ext","devanagari","latin"]', 'v5', '2016-06-07', '1', '["300","regular","500","600","700"]', '["latin-ext","devanagari","latin"]', 'google', '2015-01-01 00:00:01', '2015-01-01 00:00:01', '0');
 # Ubuntu Condensed
 INSERT INTO `DB_NAME`.`fonts` (`id`, `name`, `family`, `category`, `variants`, `subsets`, `version`, `last_modified`, `active`, `active_variants`, `active_subsets`, `provider`, `created`, `modified`, `del`) VALUES ('NEW_ID', 'Ubuntu Condensed', '''Ubuntu Condensed'', sans-serif', 'sans-serif', '["regular"]', '["latin-ext","cyrillic-ext", "cyrillic","greek","latin","greek-ext"]', 'v7', '2016-06-03', '1', '["regular"]', '["latin-ext","cyrillic-ext", "cyrillic","greek","latin","greek-ext"]', 'google', '2015-01-01 00:00:01', '2015-01-01 00:00:01', '0');
 # Lobster

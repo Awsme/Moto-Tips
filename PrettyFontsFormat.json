@@ -2,12 +2,23 @@
 
 [
     {
+        "kind": "Rajdhani",
+        "family": "Rajdhani",
+        "category": "sans-serif",
+        "variants": ["300","regular","500","600","700"],
+        "subsets": ["latin-ext","devanagari","latin"],
+        "version": "v5",
+        "lastModified": "2016-06-07",
+        "active_variants": ["300","regular","500","600","700"],
+        "active_subsets": ["latin-ext","devanagari","latin"],
+        "provider": "google",
+        "active": true
+    },
+    {
         "kind": "Passion One",
         "family": "Passion One",
         "category": "display",
-        "variants": [
-            "regular",
-            "700",
+        "variants": ["regular",    "700",
             "900"
         ],
         "subsets": [
@@ -1762,6 +1773,5 @@
         ],
         "provider": "google",
         "active": true
-    },
-
+    }
 ]
