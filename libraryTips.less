@@ -8,6 +8,67 @@
  * Flash themes for examples: mt-0484, mt-0482
  */
 
+//////////////////////////////////////////
+@maxColumns: 12;
+@columnPadding: 20px;
+@containerDesktop: 1296px + @columnPadding;
+
+.row {
+    margin: 0 -15px;
+    &:after,
+    &:before {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+.mixin-loop-xs (@i) when (@i > 0) {
+    div[class="col-xs-@{i}"] {
+        @colWidth: @i * 100 / @maxColumns;
+        width: unit(@colWidth, %);
+        padding: 0 @columnPadding / 2;
+    }
+    .mixin-loop-xs(@i - 1);
+}
+.mixin-loop-xs(@maxColumns);
+
+@media screen and (min-width: 768px) {
+    .mixin-loop-sm (@i) when (@i > 0) {
+        div[class="col-sm-@{i}"] {
+            @colWidth: @i * 100 / @maxColumns;
+            width: unit(@colWidth, %);
+            padding: 0 @columnPadding / 2;
+        }
+        .mixin-loop-sm(@i - 1);
+    }
+    .mixin-loop-sm(@maxColumns);
+}
+
+@media screen and (min-width: 992px) {
+    .mixin-loop-md (@i) when (@i > 0) {
+        div[class="col-md-@{i}"] {
+            @colWidth: @i * 100 / @maxColumns;
+            width: unit(@colWidth, %);
+            padding: 0 @columnPadding / 2;
+        }
+        .mixin-loop-md(@i - 1);
+    }
+    .mixin-loop-md(@maxColumns);
+}
+
+@media screen and (min-width: 1280px) {
+    .mixin-loop-lg (@i) when (@i > 0) {
+        div[class="col-lg-@{i}"] {
+            @colWidth: @i * 100 / @maxColumns;
+            width: unit(@colWidth, %);
+            padding: 0 @columnPadding / 2;
+        }
+        .mixin-loop-lg(@i - 1);
+    }
+    .mixin-loop-lg(@maxColumns);
+}
+//////////////////////////////////////////
+
 &.moto-widget-social-links-link_facebook   { background-color: #3a5a9f; }
 &.moto-widget-social-links-link_googleplus { background-color: #d61119; }
 &.moto-widget-social-links-link_twitter    { background-color: #45b0e3; }
@@ -36,9 +97,28 @@
 .moto-widget-social-links-link_linkedin   { &:before { content: "\f0e1"; } }
 .moto-widget-social-links-link_instagram  { &:before { content: "\f16d"; } } 
 
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: pink;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: pink;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: pink;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: pink;
+}
+
 /*
  * Test mixin
  */
+ .socialLinkSize(@xy; @radius: 0;) {
+    width: @xy;
+    height: @xy;
+    line-height: @xy;
+    border-radius: @radius;
+}
 .caption_center( @top: 50%; ) {
     top: @top;
     bottom: auto;
@@ -58,4 +138,45 @@
     left: 0;
     right: 0;
     text-align: center;
+}
+
+/* $7. Social Links */
+/* ------------------------------ */
+.moto-widget-social-links {
+    &-item {
+        &:not(:first-child) { margin-left: 10px; }        
+    }
+    &-link {
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        transition: .3s;
+        font-size: 24px;
+        &:before {
+            display: block;
+            transition: .3s;
+            font-family: FontAwesome;
+        }
+        &_facebook   { &:before { content: "\f09a"; } }
+        &_googleplus { &:before { content: "\f0d5"; } }
+        &_twitter    { &:before { content: "\f099"; } }
+        &_pinterest  { &:before { content: "\f0d2"; } }
+        &_linkedin   { &:before { content: "\f0e1"; } }
+        &_instagram  { &:before { content: "\f16d"; } }
+    }
+    &.moto-preset-default & {
+        &-link {
+            .socialLinkSize(60px, 50%);
+        }        
+    }
+    &.moto-preset-2 & {
+        &-link {
+            .socialLinkSize(40px);
+        }
+    }
+    &.moto-preset-3 & {
+        &-link {
+            .socialLinkSize(50px, 50%);
+        }
+    }
 }

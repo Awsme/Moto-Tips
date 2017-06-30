@@ -1,13 +1,24 @@
-<script>
-  angular.module('website.widget.contact_form').directive('motoCaptchaContactFormButton', ['widget.ContactForm.Service', function(MailService){
+<script>    
+try {
+    angular.module('website.widget.contact_form').directive('motoWidgetContactFormButtons', [function(){
         return {
+            restrict: 'C',
             link: function($scope, $element, $attr) {
-                $scope.captchaSubmit = function() {
-                    if(angular.element('.g-recaptcha-response').val()){
-                        $scope.submit();
-                    }
-                };
+                if($element.closest('.moto-widget-contact_form').is('.moto-preset-default')) {
+                    $element.find('.moto-widget-button-link').on('mousedown', function(event) {
+                       if(angular.element('.g-recaptcha-response').val()) {
+                            $scope.$parent.sending = false;
+                            $scope.submit();
+                        } else {
+                            $scope.$parent.sending = true;
+                        }
+                    });
+                    $element.before('<div class="g-recaptcha" data-sitekey="6LcxGCEUAAAAAOHW3GboQ0GozanSiP6AN5OIdzmN"></div>');
+                }
             }
         };
     }]);
-  </script>
+}
+catch(ignored){
+}
+</script>

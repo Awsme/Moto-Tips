@@ -1,0 +1,127 @@
+<style>
+  @media screen and (max-width: 1039px) {
+     .moto-widget-menu .moto-widget-menu-list > .moto-widget-menu-item:not(:first-child) {
+      margin-left: 5px!important;  
+    } 
+  }
+  .moto-widget-menu.moto-preset-3 .moto-widget-menu-list > .moto-widget-menu-item:not(:first-child) {
+    margin-left: 25px;
+  }
+  .moto-widget-menu.moto-preset-3 .moto-widget-menu-list >.moto-widget-menu-item >.moto-widget-menu-link {
+    padding: 0 0 0 17px;
+    font-size: 12px;
+  }
+  .moto-widget-menu.moto-preset-3 .moto-widget-menu-list > .moto-widget-menu-item > .moto-widget-menu-link:before {
+      position: absolute;
+      left: 0;
+      top: 2px;
+      width: 9px;
+      height: 9px;
+      display: inline-block;
+      background: #ffd861;
+      content: "";
+      -webkit-transition: 0.4s all ease;
+      transition: 0.4s all ease;
+      -webkit-transform: scale(0);
+      transform: scale(0);
+  }
+  .moto-widget-menu.moto-preset-3 .moto-widget-menu-list > .moto-widget-menu-item > .moto-widget-menu-link:hover:before,
+  .moto-widget-menu.moto-preset-3 .moto-widget-menu-list > .moto-widget-menu-item > .moto-widget-menu-link-active:before {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  .moto-widget-menu.moto-preset-3 .moto-widget-menu-item:last-child .moto-widget-menu-sublist{
+    width: 180px;
+    right: 0;
+    left: auto;
+  }
+  .moto-widget-menu.moto-preset-3 .moto-widget-menu-item:last-child .moto-widget-menu-sublist .moto-widget-menu-item {
+    width: 100%!important;
+    float:none!important;
+    display: block!important;
+  }
+  /* Item hover for submenu vision */
+  .moto-widget-menu.moto-preset-3 .moto-widget-menu-item:hover .moto-widget-menu-sublist {
+    display: block;
+  }
+  .moto-widget-menu.moto-preset-3 .moto-widget-menu-list .moto-widget-menu-sublist {
+    top: calc(100% + 26px);
+    width: 580px;
+    transition: .3s;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 35px 32px 35px;
+    border: none;
+  }
+  .moto-widget-menu.moto-preset-3 .moto-widget-menu-list .moto-widget-menu-item > .moto-widget-menu-sublist > .moto-widget-menu-item {
+    display: inline-block;
+    width: 33.3333%;
+    float: left;
+  }
+  .moto-widget-menu.moto-preset-3 .moto-widget-menu-list .moto-widget-menu-sublist:before {
+    position: absolute;
+    top: -26px;
+    left: 0;
+    width: 100%;
+    height: 26px;
+    content: "";
+  }
+  /* Links in submenu */
+  .moto-widget-menu.moto-preset-3 .moto-widget-menu-list .moto-widget-menu-sublist .moto-widget-menu-item .moto-widget-menu-link:before {
+    display: none;
+  }
+  .moto-widget-menu.moto-preset-3 .moto-widget-menu-list .moto-widget-menu-sublist .moto-widget-menu-item .moto-widget-menu-link {
+    font-size: 14px;
+    line-height: 26px;
+    text-align: left;
+    padding: 0!important;
+    margin-bottom: 10px;
+  }
+  .moto-widget-menu.moto-preset-3 .moto-widget-menu-list .moto-widget-menu-sublist .moto-widget-menu-item .moto-widget-menu-link-level-2 {
+    color: #fff!important;
+    font-weight: bold;
+  }
+  .moto-widget-menu.moto-preset-3 .moto-widget-menu-list .moto-widget-menu-sublist .moto-widget-menu-item .moto-widget-menu-link-level-2:after {
+    display: none;
+  }
+  /* Menu 3 level */
+  .moto-widget-menu.moto-preset-3 .moto-widget-menu-list .moto-widget-menu-sublist .moto-widget-menu-sublist {
+    position: relative;
+    width: 100%;
+    box-shadow: none;
+    padding: 0;
+    left: 0!important;
+  }
+  .moto-widget-menu.moto-preset-3 .moto-widget-menu-list .moto-widget-menu-sublist .moto-widget-menu-sublist .moto-widget-menu-item {
+    display: block;
+    float: none;
+    width: 100%;
+  }
+  /* Links of 3rd lvl menu */
+  .moto-widget-menu.moto-preset-3 .moto-widget-menu-list .moto-widget-menu-sublist .moto-widget-menu-sublist .moto-widget-menu-item .moto-widget-menu-link {
+    font-size: 12px;
+    margin: 0;
+  }
+  .moto-widget-menu.moto-preset-3 .moto-widget-menu-list .moto-widget-menu-sublist .moto-widget-menu-sublist .moto-widget-menu-item:last-child .moto-widget-menu-link:after {
+    display: none;
+  }
+  @media screen and (max-width: 1039px) {
+    .moto-widget-menu.moto-preset-3 .moto-widget-menu-list >.moto-widget-menu-item >.moto-widget-menu-link-level-1 {
+      padding: 10px 5px;
+    }
+    .moto-widget-menu.moto-preset-3 .moto-widget-menu-list .moto-widget-menu-sublist {
+      left: 0;
+      transform: translateX(0);
+      -webkit-transform: translateX(0);
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .moto-widget-menu.moto-preset-3 .moto-widget-menu-list .moto-widget-menu-item > .moto-widget-menu-sublist > .moto-widget-menu-item {
+      width: 100%;
+      float: none;
+    }
+    .moto-widget-menu.moto-preset-3.moto-widget-menu-mobile-open .moto-widget-menu-list {
+      background: #fff;
+    }
+  }
+</style>

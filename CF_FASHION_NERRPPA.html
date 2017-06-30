@@ -1,0 +1,33 @@
+<form id="unisender-contact-form-fotter">
+    <div class="input-box">
+        <input id="newsletter" class="input-text required-entry validate-email" title="Sign up for our newsletter" type="text" name="customSubscriberEmail">
+    </div>
+    <div class="actions">
+        <button class="button" id="static-subscribe-button-footer" type="submit"><i class="fa fa-angle-right"></i></button>
+    </div>
+    <div id="unisender-contact-form-fotter-result" style="color:#fff;">
+        
+    </div>
+</form> 
+<script type="text/javascript">
+    $("#unisender-contact-form-fotter").submit(function(e){
+        e.preventDefault();
+        var form_data = new FormData(this);
+        $.ajax({
+            url: '/UnisenderIntegration/UnisenderHandler.php',
+            type: 'POST',
+            data: form_data,
+            dataType : "json",
+            contentType: false,
+            cache: false,
+            processData: false
+        }).done(function(data) {
+            if(data.type == "error"){
+                $("#unisender-contact-form-fotter-result").html(data.text);
+            }
+            if(data.type == "done"){
+                $("#unisender-contact-form-fotter-result").html(data.text);
+            }
+        });        
+    });
+</script>

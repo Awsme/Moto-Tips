@@ -1,0 +1,39 @@
+1. Берем шаблон переливаем в e:\newMoto3\ разархивируем и переименовуем в НОМЕР-МОТЫ_ДИЗАЙНЕР_ТМ-НОМЕР_НОВЫЙ-НОМЕР-ДЛЯ-МОТО(с таблицы айса)
+
+2. Меняем в theme.json -> template_id на НОВЫЙ-НОМЕР-ДЛЯ-МОТО(с таблицы айса)
+
+3. Заливаем в n:\tools\moto3\repository\svn\templates\1001-1500\ и e:\wamp\www\moto3_templates\moto3_templates_production\trunk\1001-1500\
+
+4. ADD and Commit тему и заливаем в локальный репозиторий --- e:\wamp\www\moto3_templates\moto3_templates_production\trunk\
+
+5. Переименовуем скрины, а так же меняем в папке color на: ХХХХХ.jpg(-backImage(для превью), 320, 800) - e:\newMoto3\premium\
+
+6. Создаем Preview - http://tools.fmt в блоке Moto3 TEMPLATES нажимаем Preview Maker v3 (Находим шабл, нажимаем Create Preview)
+
+7. Заменяем жижу которая была сделана превью мейкером - на СВОЮ: -features1.jpg и big
+
+8. Запускаем Zip Updater - http://tools.fmt/ в блоке Moto3 TEMPLATES нажимаем Zip Updater, выбираем шаблон и запускаем
+
+9. В screenshots заливаем содержимое \\192.168.5.2\tools\moto3\repository\screenshots\ на ftp granter
+
+10. В templates заливаем содержимое \\192.168.5.2\tools\moto3\repository\to_update\
+
+11. После того как залилось в tg1.loc нажимаем copy - тм темплейт копи
+
+12. Делаем синхронизацию скриншотов и темплейтов
+
+13. Подключаем images и заливаем \\192.168.5.2\tools\moto3\repository\images_screens\ - фтп: фор имаджес
+
+14. заходим http://template52342.motopreview.com/mt-tools/#!/demo/remote/ (перед этим просим засинхронить Пирожка или Новосельцева)
+
+15. Письмо айсу:
+    "Привет! На сегодня готов Мото3 шаблон(добавь пожалуйста Lazy Load effect, Blog)
+	ХХХХХХ, дизайнер DESIGNER, переделан с OLD_XXXXXX
+	и 4 скрина xxxxx-features1.jpg, xxxxx-features2.jpg, xxxxx-features3.jpg, xxxxx-features4.jpg"
+	заходим http://template52342.motopreview.com/mt-tools/#!/demo/remote/
+
+	и выбираем нужный номер шабла(клацаем инсталДемо)
+перед 
+13.2 - заходим http://template52342.motopreview.com/mt-tools/#!/demo/remote/ (перед этим просим засинхронить Пирожка или Новосельцева)
+
+и выбираем нужный номер шабла(клацаем инсталДемо)
