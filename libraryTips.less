@@ -5,7 +5,11 @@
  * FontAwesome CDN
  * https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
  *
+ * jQuery
+ * <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+ 
  * Flash themes for examples: mt-0484, mt-0482
+ *
  */
 
 //////////////////////////////////////////
@@ -180,3 +184,63 @@
         }
     }
 }
+
+// popup start
+// html
+<div class="popup">
+    <div class="popup-inner">
+        <div class="close"><img src="<?php bloginfo('template_url'); ?>/assets/images/close.png" alt=""></div>
+        <div class="title">Отлично!</div>
+        <div class="descr">Спешите на почту - ваша книга уже ждет вас</div>
+        <div class="button">
+            <a class="btn btn-size-medium btn-style-2">Ok</a>
+        </div>
+    </div>
+</div>
+// less
+.popup {
+    display:none;
+    background: rgba(38, 56, 65, .9);
+
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left:0;
+    right:0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    &-inner {
+        margin: 0 auto;
+        padding: 30px 40px;
+        text-align: center;
+        width: 450px;
+        min-height: 250px;
+        position: absolute;
+        background: #fff;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        .title {
+            font-size: 30px;
+            color: #243238;
+            line-height: 1.2;
+            margin-bottom:30px;
+            font-weight: bold;
+        }
+        .descr {
+            margin-bottom: 30px;
+            colo:#90a4ae;
+            font-size: 16px;
+            line-height: 1.2;
+        }
+        .close {
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            cursor: pointer;
+        }
+    }
+}
+// popup close;
